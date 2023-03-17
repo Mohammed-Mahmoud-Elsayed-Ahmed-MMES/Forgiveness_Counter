@@ -33,30 +33,41 @@ h2 {
     color: #572b0c;
     /* transition: var(--animate-delay); */
 }
-.flex {
+.container {
     position: absolute;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* position: absolute; */
-    top: 90%;
+    /* top: 50%; */
     left: 50%;
     width: 90%;
     padding: 40px;
     transform: translate(-50%,-50%);
+}
+@media (max-width: 767px) {
+    .container {
+        display: block;
+        height: 186%;
+        margin-top: 945px;
+        padding: 40px 5px 0;
+    }
+
+}
+.flex {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 95px;
+    padding: 40px;
     justify-content: center;
     align-items: center;
 }
 
 @media (max-width: 767px) {
     .flex {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        top: 229%;
-        justify-items: center;
-        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        align-content: center;
+        align-items: center;
+        height: 75vh;
+        gap: 60px;
     }
 } 
 
@@ -82,6 +93,16 @@ p {
     height: 90px;
     width: 130px;
 }
+@media (max-width: 1070px) {
+    .circle {
+        left: 18%;
+    }
+} 
+@media (max-width: 888px) {
+    .circle {
+        left: 3%;
+    }
+} 
 @media (max-width: 767px) {
     .circle {
         left: 33%;
