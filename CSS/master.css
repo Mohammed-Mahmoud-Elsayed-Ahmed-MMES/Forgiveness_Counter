@@ -44,7 +44,8 @@ h2 {
 @media (max-width: 767px) {
     .container {
         display: block;
-        height: 0%;
+        height: 110%;
+        top: 50%;
         /* margin-top: 945px; */
         padding: 40px 5px 0;
     }
