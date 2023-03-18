@@ -44,8 +44,8 @@ h2 {
 @media (max-width: 767px) {
     .container {
         display: block;
-        height: 186%;
-        margin-top: 945px;
+        height: 0%;
+        /* margin-top: 945px; */
         padding: 40px 5px 0;
     }
 
@@ -88,7 +88,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 32%;
+    left: 29%;
     border-radius: 50%;
     height: 90px;
     width: 130px;
