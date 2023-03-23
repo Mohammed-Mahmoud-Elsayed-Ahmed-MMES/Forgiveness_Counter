@@ -4,6 +4,17 @@
 //   clicks += 1;
 //   document.getElementById("clicks").innerHTML = clicks;
 // };
+
+var lastTap = 0;
+document.addEventListener('touchend', function(event) {
+    var currentTime = new Date().getTime();
+    var tapLength = currentTime - lastTap;
+    if (tapLength < 500 && tapLength > 0) {
+        event.preventDefault();
+    }
+    lastTap = currentTime;
+});
+
 var counter = 0;
 
 var add1 = function(valueToAdd){
